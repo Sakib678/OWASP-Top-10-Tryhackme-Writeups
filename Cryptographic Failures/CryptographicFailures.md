@@ -3,6 +3,13 @@
 
 When a cryptographic algorithm or a protocol is not implemented or configured correctly, it can lead to attackers accessing data such as passwords and credit card numbers. Poorly hashed passwords can be targets for brute force or dictionary attacks. Attackers look for areas of weakness in cryptographic systems in order to access sensitive data. 
 
+Common Causes include:
+- Storing passwords in plaintext
+- Using a weak or an outdated hashing algorithm such as MD5 or SHA1
+- Transmitting data over unencrypted connection
+- Hardcoding cryptographic keys
+
+
 For example, in 2019, Facebook accidentally revealed over 540 million records as they were cached on unsecured Amazon servers. These records should have been held in a secure private and definitely not a publicly available server.
 
 Mitigation:
@@ -12,6 +19,9 @@ Mitigation:
 - Outdated protocols should not be used. 
 - Store password as hashes using strong hashing functions.
 
+Tools one could use to detect or exploit this vulnerability:
+- Burp Suite
+- Wireshark
 
 
 Challenge 2 Writeup:
@@ -46,4 +56,8 @@ I used the rockyou wordlist with the md5 setting within hashcat and the plaintex
 Finally, I used the username and password to login as admin which gave me the flag.
 
 ![Screenshot 2025-06-09 180705](https://github.com/user-attachments/assets/e44ec345-2c98-4293-8c76-34d3813d4ebe)
+
+Summary: 
+
+This vulnerability highlights the importance of encryption for data that is being stored and data that is being transmitted. This challenge demonstrated a database that could be easily accessed. The database also contained the hash for the adminstrator password, which an attacker could exploit locally, avoiding detection. Without proper testing, this vulnerability is extremely dangerous. 
 
