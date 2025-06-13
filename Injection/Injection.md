@@ -4,8 +4,6 @@ Hostile data is used to try to trick the form into outputting additional records
 
 ### Common injections include:
 - SQL Injection - When user input is passed to an SQL query. An attacker could pass in an SQL query, which could cause an unintended outcome
-- NoSQL Injection
-- LDAP Injection
 - Command Injection - When user input is passed to system commands, An attacker can pass in a command which can manipulate the server's system, potentially returning sensitive data
 
 For example, the Equifax breach in 2017 was a major attack where attackers entered malicious SQL queries and they extracted confidential customer information
