@@ -13,16 +13,16 @@ For example, in CVE-2025-48741, users are able to access log and alert files, ev
 
 This type of vulnerability can be discovered by manipulating a URL to bypass access controls, which can allow an attacker to gain unauthorised access to privileged data. Improperly secured endpoints can be used to access or modify data using the access level of the endpoint.
 
-Mitigation:
+# Mitigation:
  - Deny access by default unless it is a public resource
  - A user should be given the minimum level of access necessary for a user to perform their function
  - Regularly and comprehensively auditing access controls, analysing possible gaps in security that an attacker could exploit. 
 
-Tools one could use to exploit this:
+# Tools one could use to exploit this:
 - Burp Suite
 - OWASP ZAP
 
-Challenge 1 Writeup:
+# Challenge 1 Writeup:
 
 This challenge is a Broken Access Control challenge focusing on IDOR (Insecure Direct Object Reference). This is where an attacker is able to access a resource indirectly via a broken access control.
 
@@ -37,5 +37,5 @@ By changing the id value to 0, it gives us the flag.
 ![Screenshot 2025-06-09 173128](https://github.com/user-attachments/assets/89628994-e210-46c4-bf06-f936ad51d476)
 
 
-Summary:
+# Summary:
 This is a low risk attack, if access control is set correctly. If an account is breached, but it is an account with limited access, it limits the attacker, unless they are able to escalate privileges. It is essential to ensure that access levels are completely locked down. The impact of this attack is huge as if an attacker is able to escalate privileges vertically, after gaining initial access, it can lead to considerable data exfiltration. 
