@@ -26,7 +26,7 @@ So by registering as " darren", it allows us to  create a new account that is ab
 
 ![image](https://github.com/user-attachments/assets/e4c8d039-7870-4000-8d81-6151b776ded8)
 
-The second flag invovles doing the same thing but as "arthur". 
+The second flag involves doing the same thing but as "arthur". 
 
 ![image](https://github.com/user-attachments/assets/e5a060de-66d5-419c-9843-69a49ccd3d66)
 
