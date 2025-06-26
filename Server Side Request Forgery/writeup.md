@@ -27,6 +27,26 @@ I also started a netcat listener to listen on port 80 in order to recieve the co
 
 The manipulation of the server parameter sends the request to my VM rather than the secure file storage server. This shows me the API key, which is a unique code that is used to identify users and authentication.
 
+This next part was a little more difficult.
+
+Gaining access to the admin area involves trying to exploit an SSRF vulnerability. 
+I tried changing the server parameter so that the admin area is being accessed via localhost. This link still works but doesn't produce exactly what I need.
+
+![image](https://github.com/user-attachments/assets/ffb43639-0017-45bd-87c4-daa9785d1f9f)
+
+
+We need to remove the id part of the URL, however we cannot access the site without it. So our next step is to try to keep the link together but stop the server from using the id part of it. 
+
+This link provided some help. This is a method called escaping, which will break up the link. 
+
+https://portswigger.net/web-security/essential-skills/obfuscating-attacks-using-encodings
+
+I used the following link:
+http://10.10.246.211:8087/download?server=http://localhost:8087/admin%23&id=75482342
+
+This allowed me to view the following pdf file, which showed em the flag.
+
+![image](https://github.com/user-attachments/assets/ca90554b-2a31-4507-b8bb-e6eb188702a8)
 
 
 ### Mitigation/Prevention Strategies:
@@ -38,7 +58,7 @@ The manipulation of the server parameter sends the request to my VM rather than 
 
 ### Summary:
 
-This challenge demonstrates how a harmless parameter being exposed can lead to a serious SSRF vulnerability. 
+This challenge demonstrates how a harmless parameter being exposed can lead to a serious SSRF vulnerability. By manipulating this parameter, I was able to make the server send a request to my own machine, where I captured an API key. Using URL encoding, I was able to access the internal admin area. This highlights the importance of validating input. 
 
 
 
