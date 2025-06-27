@@ -24,7 +24,7 @@ This type of vulnerability can be discovered by manipulating a URL to bypass acc
 
 ### Challenge 1 Writeup:
 
-This challenge is a Broken Access Control challenge focusing on IDOR (Insecure Direct Object Reference). This is where an attacker is able to access a resource indirectly via a broken access control.
+This challenge is a Broken Access Control challenge focusing on IDOR (Insecure Direct Object Reference). This is where an attacker gains unauthorised access to a resource indirectly via a broken access control.
 
 
 ![Screenshot 2025-06-09 172830](https://github.com/user-attachments/assets/14e6ea86-4c37-47cc-b734-5caebc799178)
