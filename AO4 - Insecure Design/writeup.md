@@ -1,19 +1,19 @@
 ***
 # AO4:2021 Insecure Design
 
-This is a vulnerability related to how flaws in development can lead to vulnerabilities that an attacker can exploit. The idea of this type of vulnerability is that the application remains insecure to poor design.
+This is a vulnerability related to how flaws in development can lead to vulnerabilities that an attacker can exploit. The idea of this type of vulnerability is that the application remains insecure due to poor design.
 Developers, quality auditors and the security teams should adhere to best design practices so that the vulnerabilities are not released with the product. 
 
-For example, The Mirai Botnet was a combination of IoT devices that were maliciously controlled bots. These IoT devices had easy to guess default usernames and passwords, which allowed an attacker to control them. If they were securely designed, the users would have been required to change these credentials during the device setup. 
+For example, The Mirai Botnet was a combination of IoT devices that were infected with malware. These IoT devices had easy to guess default usernames and passwords, which allowed an attacker to control them. If they were securely designed, the users would have been required to change these credentials during the device setup. 
 
 ### Tools one could use to exploit this:
 - Burp Suite
 - OWASP Zap
 - Postman
-- 
+  
 ### Challenge Writeup:
 
-The website is a login page for a file server. We need to log into "josephs" account. As the password is unknown, we could try every possible combination, but this could take a while and we may be limited to a set number of attempts.
+The website for this challenge is a login page for a file server. We need to log into "josephs" account. As the password is unknown, we could try every possible combination, but this could take a while and we may be limited to a set number of attempts.
 An easier method to try first is the password reset function. Once opening this, we enter the name of  the account and we are required to pick one security question and answer it. 
 2 of the security questions could have a lot of answers, however answering "what is your favourite colour" is likely to be a set choice of options that we can try.
 So by brute forcing this question using the different colours, we can try to see if one works.
@@ -30,8 +30,8 @@ We can then use this password to login to the interface. I then navigated to the
 
 
 ### Mitigation:
-- Using a secure development lifecycle and secure coding practices
-- Applying the defense in depth principle which establishes multiple layers of security
+- Use a secure development lifecycle and follow secure coding practices
+- Apply the defense in depth principle which establishes multiple layers of security
 - Use the principle of least privilege
 - Perform Threat Modelling 
 
