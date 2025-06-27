@@ -5,8 +5,15 @@ This repository contains my writeups for all of the challenges within the OWASP 
 Link to room: https://tryhackme.com/room/owasptop102021
 
 
+### Each section includes:
+- A breakdown of the vulnerability
+- A real world example
+- A completed TryHackMe challenge related
+- Key takeaways and mitigations
 
-The goal of this project is to reinforce my understanding of each vulnerability type through real world examples. 
+
+
+The goal of this project is to reinforce my understanding of each vulnerability type through real world examples. I wanted to apply my theory and test each OWASP vulnerability using TryHackMe labs. 
 
 ###  Structure
 
@@ -27,10 +34,13 @@ Each folder/writeup in this repository corresponds to a specific OWASP Top 10 ca
 
 ### Instructions
 
-- Browse through each markdown file to read about the vulnerability, mitigation strategies, and hands-on challenge walkthroughs.
+- Browse through each file to read about the vulnerability, mitigation strategies, and challenge writeups.
 - Use the screenshots to follow along.
-- Each summary section offers a quick understanding of the real-world implications.
+- Each summary section offers a quick understanding of the vulnerability. 
 
+
+This project is part of my continuous learning journey in cybersecurity. I am always 
+looking to learn more and grow. 
 
 Feel free to connect or contribute
 
