@@ -28,7 +28,7 @@ Each folder/writeup in this repository corresponds to a specific OWASP Top 10 ca
 ### Instructions
 
 - Browse through each markdown file to read about the vulnerability, mitigation strategies, and hands-on challenge walkthroughs.
-- Use the screenshots and code samples to follow along.
+- Use the screenshots to follow along.
 - Each summary section offers a quick understanding of the real-world implications.
 
 
