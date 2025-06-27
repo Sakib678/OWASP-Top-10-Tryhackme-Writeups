@@ -36,6 +36,4 @@ Feel free to connect or contribute
 
 ### Author
 
-Sakib 
-
 https://www.linkedin.com/in/sakibarif/
