@@ -37,4 +37,4 @@ We can run some other commands to see what information we can get.
 
 
 ### Summary:
-Injection vulnerabilities are extremely dangerous, especially if they are running with adminstrator level access. An attacker can access sensitive data or manipulate the webpage to their liking. Applications should never trust the input of a user and they should follow strict santisation protocols to avoid these attacks. 
+Injection vulnerabilities are extremely dangerous, especially if they are running with administrator level access. An attacker can access sensitive data or manipulate the webpage to their liking. Applications should never trust the input of a user and they should follow strict sanitisation protocols to avoid these attacks. 
