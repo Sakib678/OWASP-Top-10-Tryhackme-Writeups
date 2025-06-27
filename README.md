@@ -2,13 +2,13 @@
 
 This repository contains my writeups for all of the challenges within the OWASP Top 10 TryHackMe room.
 
-Link to room: https://tryhackme.com/room/owasptop102021'
+Link to room: https://tryhackme.com/room/owasptop102021
 
 
 
 The goal of this project is to reinforce my understanding of each vulnerability type through real world examples. 
 
-### 📂 Structure
+###  Structure
 
 Each folder/writeup in this repository corresponds to a specific OWASP Top 10 category (https://owasp.org/www-project-top-ten/):
 
@@ -25,7 +25,7 @@ Each folder/writeup in this repository corresponds to a specific OWASP Top 10 ca
 | A09 | Security Logging and Monitoring Failures      | ✅ Complete |
 | A10 | Server-Side Request Forgery (SSRF)            | ✅ Complete |
 
-### 🚀 How to Use
+### Instructions
 
 - Browse through each markdown file to read about the vulnerability, mitigation strategies, and hands-on challenge walkthroughs.
 - Use the screenshots and code samples to follow along.
